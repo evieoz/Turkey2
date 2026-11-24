@@ -5,77 +5,323 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Macklin Celebirdie | San Jose Sharks</title>
+    <title>Macklin Celebirdie | The Thanksgiving Classic</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <p class="eyebrow">SAN JOSE SHARKS • #71</p>
-        <h1>Macklin Celebirdie</h1>
-        <p class="subtitle">Too busy scoring to be Thanksgiving dinner.</p>
-    </header>
+    <!-- CSS-only interactive controls -->
+    <input class="mode-input" type="radio" name="mode" id="skate-mode" checked>
+    <input class="mode-input" type="radio" name="mode" id="shoot-mode">
+    <input class="mode-input" type="radio" name="mode" id="celebrate-mode">
+    <input class="mode-input" type="checkbox" id="pause-mode">
 
-    <div class="rink">
-        <div class="center-line"></div>
-        <div class="center-circle"></div>
+    <div class="website">
+
+        <!-- Game day header -->
+        <header>
+            <div class="top-bar">
+                <span>SAN JOSE SHARKS</span>
+                <span class="live-tag">● GAME DAY</span>
+                <span>PLAYER 71</span>
+            </div>
+
+            <p class="eyebrow">THE THANKSGIVING CLASSIC</p>
+            <h1>Macklin <span>Celebirdie</span></h1>
+            <p class="subtitle">
+                Too busy scoring to be Thanksgiving dinner.
+            </p>
+        </header>
+
+        <!-- Main arena -->
+        <main class="arena">
+
+            <div class="arena-label">
+                <span>THE SHARK TANK</span>
+                <span>THANKSGIVING EXHIBITION</span>
+            </div>
+
+            <!-- Ice rink -->
+            <div class="rink">
+
+                <!-- Rink markings -->
+                <div class="center-line"></div>
+                <div class="center-circle"></div>
+                <div class="center-dot"></div>
+
+                <div class="blue-line blue-left"></div>
+                <div class="blue-line blue-right"></div>
+
+                <div class="goal-line goal-line-left"></div>
+                <div class="goal-line goal-line-right"></div>
+
+                <div class="faceoff faceoff-one"></div>
+                <div class="faceoff faceoff-two"></div>
+                <div class="faceoff faceoff-three"></div>
+                <div class="faceoff faceoff-four"></div>
+
+                <div class="goal-net goal-left"></div>
+                <div class="goal-net goal-right"></div>
+
+                <div class="crease crease-left"></div>
+                <div class="crease crease-right"></div>
+
+                <div class="ice-scratches"></div>
+
+                <div class="ice-brand">
+                    SAN JOSE
+                    <small>SHARKS</small>
+                </div>
+
+                <!-- Arena lighting -->
+                <div class="arena-lights">
+                    <div class="spotlight spotlight-left"></div>
+                    <div class="spotlight spotlight-right"></div>
+                </div>
+
+                <!-- Floating ice particles -->
+                <div class="ice-particles">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- Player profile -->
+                <aside class="player-card">
+                    <p class="card-label">PLAYER PROFILE</p>
+
+                    <div class="profile-number">71</div>
+
+                    <h2>MACKLIN<br>CELEBIRDIE</h2>
+
+                    <div class="player-position">
+                        CENTER • SJS
+                    </div>
+
+                    <div class="profile-divider"></div>
+
+                    <div class="player-detail">
+                        <span>TEAM</span>
+                        <strong>San Jose Sharks</strong>
+                    </div>
+
+                    <div class="player-detail">
+                        <span>STATUS</span>
+                        <strong class="active-status">● On the ice</strong>
+                    </div>
+
+                    <div class="player-detail">
+                        <span>SPECIES</span>
+                        <strong>Elite Turkey</strong>
+                    </div>
+
+                    <div class="player-detail">
+                        <span>THANKSGIVING</span>
+                        <strong>Unavailable</strong>
+                    </div>
+
+                    <div class="profile-bottom">
+                        FEAR THE FIN
+                    </div>
+                </aside>
+
+                <!-- Scoreboard -->
+                <aside class="scoreboard">
+                    <div class="game-status">● GAME DAY</div>
+
+                    <div class="score">
+                        <div class="score-team">
+                            <span>SJS</span>
+                            <strong class="normal-score">7</strong>
+                            <strong class="goal-score">8</strong>
+                        </div>
+
+                        <span class="score-dash">—</span>
+
+                        <div class="score-team">
+                            <span>OPP</span>
+                            <strong>1</strong>
+                        </div>
+                    </div>
+
+                    <div class="period">3RD PERIOD</div>
+
+                    <div class="game-clock">
+                        <span class="normal-clock">01:11</span>
+                        <span class="celebrate-clock">GOAL!</span>
+                    </div>
+
+                    <div class="scoreboard-bottom">
+                        THANKSGIVING CLASSIC
+                    </div>
+                </aside>
+
+                <!-- Goal announcement -->
+                <div class="goal-banner">
+                    <span>SAN JOSE SHARKS</span>
+                    <strong>GOAL!</strong>
+                    <small>71 • MACKLIN CELEBIRDIE</small>
+                </div>
+
+                <!-- Goal light -->
+                <div class="goal-light"></div>
+
+                <!-- Celebration confetti -->
+                <div class="confetti">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+
+                <!-- Original turkey character -->
+                <div class="turkey">
+
+                    <!-- Tail feathers -->
+                    <div class="tail"></div>
+                    <div class="tail"></div>
+                    <div class="tail"></div>
+                    <div class="tail"></div>
+                    <div class="tail"></div>
+                    <div class="tail"></div>
+                    <div class="tail"></div>
+                    <div class="tail"></div>
+                    <div class="tail"></div>
+                    <div class="tail"></div>
+                    <div class="tail"></div>
+
+                    <!-- Hockey legs -->
+                    <div class="leg"></div>
+                    <div class="leg"></div>
+
+                    <!-- Ice skates -->
+                    <div class="skate skate-left"></div>
+                    <div class="skate skate-right"></div>
+
+                    <!-- Sharks jersey -->
+                    <div class="body">
+                        <div class="collar"></div>
+                        <div class="jersey-name">CELEBRINI</div>
+                        <div class="jersey-number">71</div>
+                        <div class="jersey-stripe"></div>
+                    </div>
+
+                    <!-- Jersey sleeves -->
+                    <div class="wing"></div>
+                    <div class="wing"></div>
+
+                    <!-- Turkey face -->
+                    <div class="head">
+                        <div class="eye"></div>
+                        <div class="beak"></div>
+                        <div class="red"></div>
+                    </div>
+
+                    <!-- Hockey helmet -->
+                    <div class="hat-top">
+                        <span>71</span>
+                    </div>
+
+                    <div class="hat-bottom"></div>
+                    <div class="visor"></div>
+
+                    <!-- Hockey equipment -->
+                    <div class="stick"></div>
+                    <div class="glove"></div>
+                    <div class="puck"></div>
+
+                    <!-- Skating effects -->
+                    <div class="ice-spray"></div>
+                    <div class="ice-shadow"></div>
+
+                </div>
+
+                <!-- Independent puck for shooting mode -->
+                <div class="shot-puck"></div>
+
+                <div class="rink-caption">
+                    THE THANKSGIVING CLASSIC • SAN JOSE
+                </div>
+
+            </div>
+
+            <!-- Interactive control panel -->
+            <section class="control-panel">
+
+                <div class="control-heading">
+                    <span>PLAYER CONTROLS</span>
+                    <small>Choose Macklin's next move</small>
+                </div>
+
+                <div class="controls">
+
+                    <label for="skate-mode" class="control skate-button">
+                        <span class="control-icon">▶</span>
+                        <span>SKATE</span>
+                    </label>
+
+                    <label for="shoot-mode" class="control shoot-button">
+                        <span class="control-icon">◎</span>
+                        <span>SHOOT PUCK</span>
+                    </label>
+
+                    <label for="celebrate-mode" class="control celebrate-button">
+                        <span class="control-icon">★</span>
+                        <span>CELEBRATE</span>
+                    </label>
+
+                    <label for="pause-mode" class="control pause-button">
+                        <span class="control-icon">Ⅱ</span>
+                        <span class="pause-text">PAUSE</span>
+                        <span class="resume-text">RESUME</span>
+                    </label>
+
+                </div>
+
+                <div class="mode-description">
+                    <span class="skate-description">
+                        #71 is taking a lap around the Shark Tank.
+                    </span>
+
+                    <span class="shoot-description">
+                        Celebrini shoots... and scores!
+                    </span>
+
+                    <span class="celebrate-description">
+                        Another goal for the Thanksgiving MVP!
+                    </span>
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- Bottom game day branding -->
+        <footer>
+            <span>SAN JOSE SHARKS</span>
+            <span class="footer-number">71</span>
+            <span>FEAR THE FIN</span>
+        </footer>
+
+        <div class="credits">
+            THE THANKSGIVING CLASSIC • CSS TURKEY CHALLENGE
+        </div>
+
     </div>
-
-    <div class="turkey">
-
-        <div class="tail"></div>
-        <div class="tail"></div>
-        <div class="tail"></div>
-        <div class="tail"></div>
-        <div class="tail"></div>
-        <div class="tail"></div>
-        <div class="tail"></div>
-        <div class="tail"></div>
-        <div class="tail"></div>
-        <div class="tail"></div>
-        <div class="tail"></div>
-
-        <div class="leg"></div>
-        <div class="leg"></div>
-
-        <div class="skate skate-left"></div>
-        <div class="skate skate-right"></div>
-
-        <div class="body">
-            <div class="collar"></div>
-            <div class="jersey-name">CELEBRINI</div>
-            <div class="jersey-number">71</div>
-            <div class="jersey-stripe"></div>
-        </div>
-
-        <div class="wing"></div>
-        <div class="wing"></div>
-
-        <div class="head">
-            <div class="eye"></div>
-            <div class="beak"></div>
-            <div class="red"></div>
-        </div>
-
-        <div class="hat-top">
-            <span>71</span>
-        </div>
-
-        <div class="hat-bottom"></div>
-        <div class="visor"></div>
-
-        <div class="stick"></div>
-        <div class="glove"></div>
-        <div class="puck"></div>
-
-    </div>
-
-    <footer>
-        <span>SAN JOSE</span>
-        <span class="footer-number">71</span>
-        <span>FEAR THE FIN</span>
-    </footer>
 
 </body>
 
