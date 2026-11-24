@@ -1,0 +1,555 @@
+
+/* =====================================
+   MACKLIN CELEBIRDIE
+   San Jose Sharks Turkey Disguise
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+body {
+    background: #eaf6f8;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #006d75;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* STEP 1: Website heading */
+
+header {
+    position: relative;
+    z-index: 10;
+    padding: 20px 10px;
+}
+
+.eyebrow {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+h1 {
+    font-size: clamp(30px, 6vw, 65px);
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    margin: 5px;
+    color: #006d75;
+    text-shadow: 3px 3px white;
+}
+
+.subtitle {
+    color: #526c72;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* STEP 2: Ice rink background */
+
+.rink {
+    position: absolute;
+    width: 90%;
+    height: 70%;
+    left: 5%;
+    top: 20%;
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #e3f4fa,
+        #ffffff
+    );
+    border: 5px solid #c6dce3;
+    border-radius: 100px;
+    box-shadow: 0 15px 40px #006d7515;
+    overflow: hidden;
+}
+
+.center-line {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #d94b4b;
+    top: 50%;
+    opacity: 0.25;
+}
+
+.center-circle {
+    position: absolute;
+    width: 35vmin;
+    height: 35vmin;
+    border: 5px solid #6cadd4;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.25;
+}
+
+/* STEP 3: Original turkey container */
+
+.turkey {
+    --brown1: #006d75;
+    --brown2: #a87952;
+    --orange1: #f49b35;
+    --orange2: #d97722;
+    --teal: #006d75;
+    --black: #101820;
+    --white: #ffffff;
+
+    width: 76vmin;
+    height: 76vmin;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.turkey div {
+    position: absolute;
+    box-sizing: border-box;
+}
+
+/* STEP 4: Sharks tail feathers */
+
+.tail {
+    width: 14%;
+    height: 43%;
+    background: var(--teal);
+    border: 3px solid #00464d;
+    border-radius: 50% 50% 20% 20%;
+    top: 5%;
+    left: 43%;
+    transform-origin: 50% 100%;
+    box-shadow: inset 0 0 0 5px #ffffff15;
+}
+
+.tail:nth-child(1) {
+    transform: rotate(-75deg);
+}
+
+.tail:nth-child(2) {
+    transform: rotate(-60deg);
+    background: var(--black);
+}
+
+.tail:nth-child(3) {
+    transform: rotate(-45deg);
+    background: white;
+}
+
+.tail:nth-child(4) {
+    transform: rotate(-30deg);
+}
+
+.tail:nth-child(5) {
+    transform: rotate(-15deg);
+    background: var(--black);
+}
+
+.tail:nth-child(6) {
+    transform: rotate(0deg);
+}
+
+.tail:nth-child(7) {
+    transform: rotate(15deg);
+    background: var(--black);
+}
+
+.tail:nth-child(8) {
+    transform: rotate(30deg);
+}
+
+.tail:nth-child(9) {
+    transform: rotate(45deg);
+    background: white;
+}
+
+.tail:nth-child(10) {
+    transform: rotate(60deg);
+    background: var(--black);
+}
+
+.tail:nth-child(11) {
+    transform: rotate(75deg);
+}
+
+/* STEP 5: Hockey jersey body */
+
+.body {
+    width: 43%;
+    height: 38%;
+    background: var(--teal);
+    border: 3px solid #00474e;
+
+    /* Changed the original round body shape */
+    border-radius: 28% 28% 18% 18%;
+
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    overflow: hidden;
+    z-index: 4;
+    box-shadow: inset 0 -8px 0 #00000015;
+}
+
+.collar {
+    width: 35%;
+    height: 17%;
+    background: var(--black);
+    top: 0;
+    left: 32.5%;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.jersey-name {
+    top: 20%;
+    width: 100%;
+    color: white;
+    font-size: 1.8vmin;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.jersey-number {
+    top: 30%;
+    width: 100%;
+    color: white;
+    font-size: 13vmin;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1;
+    -webkit-text-stroke: 1px #101820;
+    text-shadow: 2px 3px #101820;
+}
+
+.jersey-stripe {
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(
+        to bottom,
+        white 0%,
+        white 15%,
+        #101820 15%,
+        #101820 85%,
+        white 85%,
+        white 100%
+    );
+}
+
+/* STEP 6: Reshaped jersey sleeves */
+
+.wing {
+    width: 17%;
+    height: 30%;
+    background: linear-gradient(
+        to bottom,
+        #006d75 0%,
+        #006d75 65%,
+        white 65%,
+        white 72%,
+        #101820 72%
+    );
+    border: 2px solid #00474e;
+    border-radius: 35% 20% 30% 30%;
+    transform-origin: top center;
+    top: 42%;
+    left: 23%;
+    transform: rotate(25deg);
+    z-index: 3;
+}
+
+.wing + .wing {
+    left: auto;
+    right: 23%;
+    transform: rotate(-35deg);
+}
+
+/* STEP 7: Turkey head */
+
+.head {
+    width: 23%;
+    height: 23%;
+    border-radius: 48%;
+    background: var(--brown2);
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 5;
+}
+
+.head::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    background: var(--brown2);
+    top: 75%;
+    left: 30%;
+    border-radius: 0 0 40% 40%;
+}
+
+.eye {
+    width: 10%;
+    height: 12%;
+    background: black;
+    border-radius: 50%;
+    top: 43%;
+    left: 30%;
+    box-shadow: 5.5vmin 0 black;
+}
+
+.eye::after {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    background: white;
+    border-radius: 50%;
+    top: 15%;
+    left: 15%;
+    box-shadow: 5.5vmin 0 white;
+}
+
+.beak {
+    width: 32%;
+    height: 25%;
+    background: var(--orange1);
+    top: 58%;
+    left: 34%;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    z-index: 2;
+}
+
+.red {
+    width: 13%;
+    height: 27%;
+    background: #a72e37;
+    top: 70%;
+    left: 53%;
+    border-radius: 30% 30% 50% 50%;
+}
+
+/* STEP 8: Hockey helmet accessory */
+
+.hat-top {
+    width: 27%;
+    height: 15%;
+    background: var(--black);
+    border-radius: 55% 55% 12% 12%;
+    top: 13%;
+    left: 36.5%;
+    border-bottom: 4px solid #006d75;
+    z-index: 7;
+    box-shadow: inset 0 5px 0 #ffffff20;
+}
+
+.hat-top span {
+    display: block;
+    color: white;
+    font-size: 3vmin;
+    font-weight: 900;
+    margin-top: 2vmin;
+}
+
+.hat-bottom {
+    width: 27%;
+    height: 11%;
+    top: 25%;
+    left: 36.5%;
+    border-left: 1.6vmin solid #101820;
+    border-right: 1.6vmin solid #101820;
+    border-radius: 0 0 25% 25%;
+    z-index: 7;
+}
+
+/* Transparent hockey visor */
+
+.visor {
+    width: 23%;
+    height: 7%;
+    top: 26%;
+    left: 38.5%;
+    background: linear-gradient(
+        130deg,
+        #ffffff55,
+        #a4e4ff20,
+        #ffffff55
+    );
+    border: 1px solid #7faebd;
+    border-radius: 0 0 30% 30%;
+    z-index: 8;
+}
+
+/* STEP 9: Hockey pants and legs */
+
+.leg {
+    width: 10%;
+    height: 17%;
+    background: linear-gradient(
+        to bottom,
+        #101820 0%,
+        #101820 45%,
+        #006d75 45%,
+        #006d75 70%,
+        white 70%,
+        white 78%,
+        #006d75 78%
+    );
+    border-radius: 0 0 15% 15%;
+    top: 73%;
+    left: 36%;
+    z-index: 2;
+}
+
+.leg + .leg {
+    left: 54%;
+}
+
+/* STEP 10: Ice skate accessories */
+
+.skate {
+    width: 17%;
+    height: 9%;
+    background: #101820;
+    border-radius: 15% 40% 20% 20%;
+    top: 85%;
+    z-index: 5;
+}
+
+.skate-left {
+    left: 29%;
+    transform: scaleX(-1);
+}
+
+.skate-right {
+    left: 54%;
+}
+
+.skate::before {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 8%;
+    top: 25%;
+    left: 25%;
+    background: white;
+    box-shadow: 0 0.7vmin white, 0 1.4vmin white;
+}
+
+.skate::after {
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 25%;
+    bottom: -28%;
+    left: 0;
+    border-bottom: 4px solid #9cabb4;
+    border-left: 3px solid #9cabb4;
+    border-right: 3px solid #9cabb4;
+    border-radius: 0 0 35% 20%;
+}
+
+/* STEP 11: Hockey stick accessory */
+
+.stick {
+    width: 2.6%;
+    height: 51%;
+    background: linear-gradient(
+        to bottom,
+        white 0%,
+        white 12%,
+        #101820 12%,
+        #101820 80%,
+        #006d75 80%
+    );
+    top: 42%;
+    left: 77%;
+    transform: rotate(-18deg);
+    transform-origin: bottom center;
+    border-radius: 3px;
+    z-index: 6;
+}
+
+.stick::after {
+    content: "";
+    position: absolute;
+    width: 7vmin;
+    height: 2.5vmin;
+    background: #101820;
+    bottom: -1vmin;
+    left: 0;
+    transform: rotate(18deg);
+    transform-origin: left center;
+    border-radius: 10% 45% 25% 20%;
+}
+
+.glove {
+    width: 11%;
+    height: 9%;
+    background: #101820;
+    border: 2px solid #006d75;
+    border-radius: 40%;
+    top: 61%;
+    left: 64%;
+    transform: rotate(-20deg);
+    z-index: 9;
+}
+
+.glove::after {
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 3px;
+    background: white;
+    top: 35%;
+    left: 15%;
+    box-shadow: 0 0.8vmin white;
+}
+
+/* STEP 12: Hockey puck */
+
+.puck {
+    width: 8%;
+    height: 3%;
+    background: #101820;
+    border-radius: 50%;
+    top: 96%;
+    left: 88%;
+    box-shadow: 0 4px #00000030;
+}
+
+/* STEP 13: Footer */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #101820;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 12px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.footer-number {
+    color: white;
+    background: #006d75;
+    padding: 7px 15px;
+    font-size: 22px;
+    font-style: italic;
+    border-radius: 5px;
+}
